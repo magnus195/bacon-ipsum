@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bacon-ipsum/precache-manifest.8ae9ee0fc77ffd1ae00856ca19576de7.js"
+  "/bacon-ipsum/precache-manifest.92df345884317836d63cf3d66d77b705.js"
 );
 
 self.addEventListener('message', (event) => {
