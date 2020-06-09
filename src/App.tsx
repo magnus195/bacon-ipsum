@@ -3,9 +3,9 @@ import './App.css';
 import {Button, Container, Form, Input} from 'reactstrap';
 
 async function generateIpsumWordlist() {
-    const request = await fetch('wordlist.txt')
+    const request = await fetch('/bacon-ipsum/wordlist.txt')
     const text = await request.text()
-    const wordArray = await text.split("\r\n")
+    const wordArray = await text.split("\n")
     return wordArray
 }
 
@@ -21,7 +21,7 @@ function App() {
         while (ipsum.length < wordsValue) {
             let randomNumber = (Math.floor(Math.random() * wordArray.length))
             let randomPunctuation = Math.random()
-            console.log(randomPunctuation)
+            //console.log(randomPunctuation)
             if (randomPunctuation > 0.80) {
                 let capitalizedWord = wordArray[randomNumber].charAt(0).toUpperCase() + wordArray[randomNumber].slice(1)
                 //console.log(capitalizedWord)
